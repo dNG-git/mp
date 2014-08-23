@@ -1,0 +1,23 @@
+----------------------------------------------------------------------------
+MediaProvider
+A device centric multimedia solution
+----------------------------------------------------------------------------
+
+Please note the Python requirements listed in "requirements.txt".
+
+Quick install:
+1. Unpack the archive (you have most probably already done that).
+2. Set your configuration under "data/settings" *.
+3. Run "python src/pas_db_tool.py --applySchema -s" * from the base
+   directory of your installation.
+4. Run "python src/mp.py" from the base directory of your installation.
+5. Point your web browser to the public hostname or IP address on port 8080.
+   http://example:8080
+
+More detailed information and steps for troubleshooting are available in the
+user guide at https://www.mediaprovider.net.
+
+* Please note that Microsoft Windows based systems need "\" as directory
+  separator.
+
+----------------------------------------------------------------------------

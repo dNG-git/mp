@@ -1,0 +1,25 @@
+----------------------------------------------------------------------------
+MediaProvider
+A device centric multimedia solution
+----------------------------------------------------------------------------
+
+Please note the Python requirements listed in "requirements.txt".
+
+Quick upgrade:
+1. Unpack the archive (you have most probably already done that).
+2. Delete your old directories other than "data/settings" (and the SQLite3
+   database usually located at "data/db.sqlite3") if you have not installed
+   custom plugins.
+3. Note the changes regarding setting keys and files listed in "CHANGELOG".
+3. Run "python src/pas_db_tool.py --applySchema" * from the base directory
+   of your installation.
+4. Run "python src/mp.py" from the base directory of your installation.
+5. Point your web browser to the your installation.
+
+More detailed information and steps for troubleshooting are available in the
+user guide at https://www.mediaprovider.net.
+
+* Please note that Microsoft Windows based systems need "\" as directory
+  separator.
+
+----------------------------------------------------------------------------

@@ -1,0 +1,215 @@
+[submodule "py_file"]
+	path = py_file
+	url = https://github.com/dNG-git/py_file.git
+	branch = master
+        update = rebase
+[submodule "py_json"]
+	path = py_json
+	url = https://github.com/dNG-git/py_json.git
+	branch = master
+        update = rebase
+[submodule "py_rfc_basics"]
+	path = py_rfc_basics
+	url = https://github.com/dNG-git/py_rfc_basics.git
+	branch = master
+        update = rebase
+[submodule "py_rfc_email"]
+	path = py_rfc_email
+	url = https://github.com/dNG-git/py_rfc_email.git
+	branch = master
+        update = rebase
+[submodule "py_rfc_http_client"]
+	path = py_rfc_http_client
+	url = https://github.com/dNG-git/py_rfc_http_client.git
+	branch = master
+        update = rebase
+[submodule "py_xml"]
+	path = py_xml
+	url = https://github.com/dNG-git/py_xml.git
+	branch = master
+        update = rebase
+[submodule "pas_core"]
+	path = pas_core
+	url = https://github.com/dNG-git/pas_core.git
+        branch = master
+        update = rebase
+[submodule "pas_interactive_cli"]
+	path = pas_interactive_cli
+	url = https://github.com/dNG-git/pas_interactive_cli.git
+	branch = master
+        update = rebase
+[submodule "pas_plugins"]
+	path = pas_plugins
+	url = https://github.com/dNG-git/pas_plugins.git
+        branch = master
+        update = rebase
+[submodule "pas_server"]
+	path = pas_server
+	url = https://github.com/dNG-git/pas_server.git
+        branch = master
+        update = rebase
+[submodule "pas_bus"]
+	path = pas_bus
+	url = https://github.com/dNG-git/pas_bus.git
+        branch = master
+        update = rebase
+[submodule "pas_timed_tasks"]
+	path = pas_timed_tasks
+	url = https://github.com/dNG-git/pas_timed_tasks.git
+        branch = master
+        update = rebase
+[submodule "pas_datetime"]
+	path = pas_datetime
+	url = https://github.com/dNG-git/pas_datetime.git
+        branch = master
+        update = rebase
+[submodule "pas_streamer"]
+	path = pas_streamer
+	url = https://github.com/dNG-git/pas_streamer.git
+        branch = master
+        update = rebase
+[submodule "pas_tag_parser"]
+	path = pas_tag_parser
+	url = https://github.com/dNG-git/pas_tag_parser.git
+        branch = master
+        update = rebase
+[submodule "pas_database"]
+	path = pas_database
+	url = https://github.com/dNG-git/pas_database.git
+        branch = master
+        update = rebase
+[submodule "pas_tasks"]
+	path = pas_tasks
+	url = https://github.com/dNG-git/pas_tasks.git
+        branch = master
+        update = rebase
+[submodule "pas_email"]
+	path = pas_email
+	url = https://github.com/dNG-git/pas_email.git
+	branch = master
+        update = rebase
+[submodule "pas_user_profile"]
+	path = pas_user_profile
+	url = https://github.com/dNG-git/pas_user_profile.git
+	branch = master
+        update = rebase
+[submodule "pas_session"]
+	path = pas_session
+	url = https://github.com/dNG-git/pas_session.git
+	branch = master
+        update = rebase
+[submodule "pas_http_core"]
+	path = pas_http_core
+	url = https://github.com/dNG-git/pas_http_core.git
+	branch = master
+        update = rebase
+[submodule "pas_http_js"]
+	path = pas_http_js
+	url = https://github.com/dNG-git/pas_http_js.git
+	branch = master
+        update = rebase
+[submodule "pas_http_tasks"]
+	path = pas_http_tasks
+	url = https://github.com/dNG-git/pas_http_tasks.git
+	branch = master
+        update = rebase
+[submodule "pas_database_ownable"]
+	path = pas_database_ownable
+	url = https://github.com/dNG-git/pas_database_ownable.git
+	branch = master
+        update = rebase
+[submodule "pas_database_text"]
+	path = pas_database_text
+	url = https://github.com/dNG-git/pas_database_text.git
+	branch = master
+        update = rebase
+[submodule "pas_subscription"]
+	path = pas_subscription
+	url = https://github.com/dNG-git/pas_subscription.git
+	branch = master
+        update = rebase
+[submodule "pas_datalinker"]
+	path = pas_datalinker
+	url = https://github.com/dNG-git/pas_datalinker.git
+	branch = master
+        update = rebase
+[submodule "pas_contentor"]
+	path = pas_contentor
+	url = https://github.com/dNG-git/pas_contentor.git
+	branch = master
+        update = rebase
+[submodule "pas_http_user"]
+	path = pas_http_user
+	url = https://github.com/dNG-git/pas_http_user.git
+	branch = master
+        update = rebase
+[submodule "pas_http_datalinker"]
+	path = pas_http_datalinker
+	url = https://github.com/dNG-git/pas_http_datalinker.git
+	branch = master
+        update = rebase
+[submodule "pas_http_table"]
+	path = pas_http_table
+	url = https://github.com/dNG-git/pas_http_table.git
+	branch = master
+        update = rebase
+[submodule "pas_http_contentor"]
+	path = pas_http_contentor
+	url = https://github.com/dNG-git/pas_http_contentor.git
+	branch = master
+        update = rebase
+[submodule "pas_media"]
+	path = pas_media
+	url = https://github.com/dNG-git/pas_media.git
+	branch = master
+        update = rebase
+[submodule "pas_imaging"]
+	path = pas_imaging
+	url = https://github.com/dNG-git/pas_imaging.git
+	branch = master
+        update = rebase
+[submodule "pas_gapi_core"]
+	path = pas_gapi_core
+	url = https://github.com/dNG-git/pas_gapi_core.git
+	branch = master
+        update = rebase
+[submodule "pas_gapi_gstreamer"]
+	path = pas_gapi_gstreamer
+	url = https://github.com/dNG-git/pas_gapi_gstreamer.git
+	branch = master
+        update = rebase
+[submodule "pas_udpne"]
+	path = pas_udpne
+	url = https://github.com/dNG-git/pas_udpne.git
+	branch = master
+        update = rebase
+[submodule "pas_json_clients"]
+	path = pas_json_clients
+	url = https://github.com/dNG-git/pas_json_clients.git
+	branch = master
+        update = rebase
+[submodule "pas_upnp"]
+	path = pas_upnp
+	url = https://github.com/dNG-git/pas_upnp.git
+	branch = master
+        update = rebase
+[submodule "mp_core"]
+	path = mp_core
+	url = https://github.com/dNG-git/mp_core.git
+	branch = master
+        update = rebase
+[submodule "mp_loader"]
+	path = mp_loader
+	url = https://github.com/dNG-git/mp_loader.git
+	branch = master
+        update = rebase
+[submodule "mp_plugins_lge"]
+	path = mp_plugins_lge
+	url = https://github.com/dNG-git/mp_plugins_lge.git
+	branch = master
+        update = rebase
+[submodule "mp_plugins_samsung"]
+	path = mp_plugins_samsung
+	url = https://github.com/dNG-git/mp_plugins_samsung.git
+	branch = master
+        update = rebase
