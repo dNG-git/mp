@@ -4,15 +4,7 @@ __py*
 nbproject
 /_extras
 /build
-/builder_skel.*
-/css_builder.*
-/file.*
-/js_builder.*
+/dist
 /make*.py*
 /mp.*
 /nbproject
-/ply
-/py_builder.*
-/rcssmin.py
-/scss
-/slimit

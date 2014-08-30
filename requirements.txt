@@ -1,1 +1,2 @@
 SQLAlchemy>=0.8
+-e git+http://git.direct-netware.de/py/builder_suite/#egg=pyBuilderSuite
