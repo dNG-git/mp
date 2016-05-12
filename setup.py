@@ -60,6 +60,9 @@ Build modules, packages, and copy data files to build directory
 
 		for module in os.listdir("."):
 		#
+			# Handle "js_djt" specially
+			if (module == "js_djt"): continue
+
 			if (path.isdir(module) and os.access(path.join(module, "setup.py"), os.R_OK)):
 			#
 				process = Popen([ sys.executable,
@@ -104,13 +107,13 @@ Build modules, packages, and copy data files to build directory
 		#
 			module_install_path = root_path
 
-			# Handle "pas_http_js" specially
-			if (module == "pas_http_js"):
+			# Handle "js_djt" specially
+			if (module == "js_djt"):
 			#
 				module_install_path = path.join(root_path,
 				                                "data",
 				                                "mmedia",
-				                                "djs"
+				                                "djt"
 				                               )
 			#
 
@@ -135,6 +138,8 @@ setup(name = "MediaProvider",
       description = "A device centric multimedia solution",
       author = "direct Netware Group et. al",
       author_email = "web@direct-netware.de",
+      license = "GPLv2+",
+      url = "https://www.mediaprovider.net",
 
       packages = [ "dNG" ],
 

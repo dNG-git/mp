@@ -48,6 +48,11 @@
 	url = https://github.com/dNG-git/pas_server.git
         branch = master
         update = rebase
+[submodule "pas_dbus"]
+	path = pas_dbus
+	url = https://github.com/dNG-git/pas_dbus.git
+        branch = master
+        update = rebase
 [submodule "pas_bus"]
 	path = pas_bus
 	url = https://github.com/dNG-git/pas_bus.git
@@ -98,14 +103,24 @@
 	url = https://github.com/dNG-git/pas_session.git
 	branch = master
         update = rebase
+[submodule "js_djt"]
+	path = js_djt
+	url = https://github.com/dNG-git/js_djt.git
+	branch = master
+        update = rebase
 [submodule "pas_http_core"]
 	path = pas_http_core
 	url = https://github.com/dNG-git/pas_http_core.git
 	branch = master
         update = rebase
-[submodule "pas_http_js"]
-	path = pas_http_js
-	url = https://github.com/dNG-git/pas_http_js.git
+[submodule "pas_http_dom_editor"]
+	path = pas_http_dom_editor
+	url = https://github.com/dNG-git/pas_http_dom_editor.git
+	branch = master
+        update = rebase
+[submodule "pas_http_table"]
+	path = pas_http_table
+	url = https://github.com/dNG-git/pas_http_table.git
 	branch = master
         update = rebase
 [submodule "pas_http_tasks"]
@@ -158,6 +173,11 @@
 	url = https://github.com/dNG-git/pas_http_contentor.git
 	branch = master
         update = rebase
+[submodule "pas_file_store"]
+	path = pas_file_store
+	url = https://github.com/dNG-git/pas_file_store.git
+	branch = master
+        update = rebase
 [submodule "pas_media"]
 	path = pas_media
 	url = https://github.com/dNG-git/pas_media.git
@@ -178,14 +198,14 @@
 	url = https://github.com/dNG-git/pas_gapi_gstreamer.git
 	branch = master
         update = rebase
-[submodule "pas_udpne"]
-	path = pas_udpne
-	url = https://github.com/dNG-git/pas_udpne.git
-	branch = master
-        update = rebase
 [submodule "pas_json_clients"]
 	path = pas_json_clients
 	url = https://github.com/dNG-git/pas_json_clients.git
+	branch = master
+        update = rebase
+[submodule "pas_udpne"]
+	path = pas_udpne
+	url = https://github.com/dNG-git/pas_udpne.git
 	branch = master
         update = rebase
 [submodule "pas_upnp"]
