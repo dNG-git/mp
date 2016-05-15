@@ -3,9 +3,193 @@ MediaProvider
 A device centric multimedia solution
 ----------------------------------------------------------------------------
 
-v0.1.02
+v0.1.03
 -------
 
-- Database schema for "pas_user_profile" has changed. Please run the DbTool.
+Database schema files have changed. Please run the DbTool.
+
+mp.loader
+
+* Added support to reload plugins
+
+mp.plugins_samsung
+
+* Added support for multiple root containers of the same type
+
+mp.core
+
+* Revised "mp" theme
+* Schedule container resource scan only once
+* Added support for sorting UPnP search results
+* Added support for auto (self) maintained resources in
+  "dNG.pas.tasks.mp.ResourceScanner"
+* Added GENA events to "X_MS_MediaReceiverRegistrar"
+* Added support for thumbnails
+* Added optional server-side resized UPnP image resources
+* Added support for depreciated "QueryStateVariable"
+* Added support for UPnP searches
+* Added support for programmable hook based UPnP resources
+* Added support for DLNA based detection of the MediaProvider API endpoint
+* Upgraded protocols to "DLNA-1.51" and "MediaServer:4"
+
+New module pas.file_store
+
+pas.upnp
+
+* Added support for thumbnails
+* Added support for device icons
+* Added support for depreciated "QueryStateVariable"
+* Added support for UPnP searches
+* Added SSDP search implementation as a separate class
+* Increased supported UPnP version to 2.0
+* Added support for "upnp:propchange" GENA notifications
+* Added implementation for the UpdateID registry
+* Set bootId and configId based on the current time to emphasize that no
+  previous cached data are valid after each server startup
+* Separated event propagation from the UPnP control point instance
+
+pas.streamer
+
+* Added streamer to support transparent decoding of base64
+* Added streamer to support transparent decoding of quoted-printable
+* Added file-like streamer that accepts a file-like instance
+
+pas.http.tasks
+
+* Added support to list database tasks
+
+pas.http.contentor
+
+* Added a list of latest documents of sub-categories
+
+pas.http.datalinker
+
+* Added service to view a list of sub entries of DataLinker one
+* Check for "read" permission before returning table rows
+
+pas.http.table
+
+* Check for "html_theme" support for the response before accessing the OSet
+  value
+* Added callback support before using an OSet for rendering
+* Added support for sorting by table column
+
+New module pas.http.dom_editor
+
+pas.http.core
+
+* Revised "simple" theme
+* Added support for date & month input fields
+* Added support for wizard-like form actions
+* Added support for "multipart/form-data" including file uploads
+* Separated abstract class from the implementation instance used to get the
+  configured server instance.
+* Added support for JSON based API endpoints
+* Fixed handling of services in sub-directories
+* Fixed possible use of wrong value in
+  "dNG.pas.data.xhtml.form.ReadOnlyFieldMixin"
+* Correctly handle script names if applicable
+* Added configurable host definition header to identify the server behind a
+  proxy
+* Do not deny streaming if no valid "Content-Type" was identified
+* Added possibility to read the URL scheme from a proxy server header
+* Added possibility to intercept HTTP request executions
+
+pas.user_profile
+
+* Added support to check if the user type is lower/higher (or equal) than a
+  given value
+* Added support for ACL entry instances and to set permissions for them.
+* Moved "AclEntry" and "Permission" SQLalchemy classes from the
+  "pas_database_ownable" module.
+
+pas.tasks
+
+* Added random retry delays for rescheduled LRT tasks
+* Failed database tasks will save the exception if no "error"
+
+pas.session
+
+* Separated abstract class from the implementation instance used to get the
+  configured session class or load an instance.
+
+pas.contentor
+
+* Added support to copy "inherited" permissions
+* Fixed attributes used to set category permissions
+
+pas.datalinker
+
+* Fixed identification of structure elements listed before their parent(s)
+  appear
+* Fixed wrong call of parent method in "DataLinker"
+* Ensure that database instances are attached to the current SQLAlchemy
+  session before accessing properties
+
+pas.database_ownable
+
+* Added support to copy "inherited" permissions and to add ACL entries.
+* Moved "AclEntry" and "Permission" SQLalchemy classes to the
+  "pas_user_profile" module. Module requirements have changed.
+
+pas.database
+
+Added support for SQLAlchemy >= 1.0
+
+* "get_key()" returned the "id" instead of the "key" attribute
+* Check for completely populated attributes of newly created instances in
+  "InstanceIterator"
+* Fixed recursive call issue in "__getattr__()"
+* Fixed release of non-acquired lock in "_enter_context_cleanup()"
+* Use SQLalchemy instance validation for non-polymorphic classes as well
+* Added helper method to enforce an database instance object to be derived
+  from a given expected class
+* Ensure automatically that a local reference to the SQLAlchemy instance is
+  available in the database instance context
+* Replaced depreciated and in SQLAlchemy 1.0 removed event used for
+  autoloading missing classes by a custom polymorphic map implementation
+* Added context specific sort definitions for instances
+* Added negative match methods in "ConditionDefinition"
+* Implemented case-(in)sensitive match conditions
+* Database connection has always been set to be serialized
+* Fixed an threading issue in "dNG.pas.database.Instance" related to
+  serialized database connections and SQLAlchemy
+
+pas.imaging
+
+* Fixed handling of EXIF data without orientation information
+* Do not compare the PIL Image class with None as this triggers an exception
+
+pas.gapi.gstreamer
+
+* Added support to create thumbnails of videos
+* Resolved "Exception: unorderable types: Fraction() > int()"
+
+pas.bus
+
+* Replaced JSON-RPC based communication protocol with a D-Bus based protocol
+* Added support to reload plugins
+
+pas.datetime
+
+* Added support to localize year-only and month-year representations
+
+New module pas.dbus
+
+pas.server
+
+* Call "close()" of streamer instance if provided.
+* Added response specific runtime settings support
+
+pas.plugins
+
+* Enhanced "reload_plugins()" to reload the module as well
+* Added weakly referenced method support for hook callbacks
+
+pas.core
+
+* Added abstract VFS implementation for VFS objects
+* Splitted file-backed and runtime configured settings
+* Fixed in-place operation at the mime type initialization
 
 ----------------------------------------------------------------------------
