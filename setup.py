@@ -136,10 +136,13 @@ Build modules, packages, and copy data files to build directory
 setup(name = "MediaProvider",
       version = get_version(),
       description = "A device centric multimedia solution",
-      author = "direct Netware Group et. al",
+      long_description = "A device centric multimedia solution. Please find more information on our website: https://www.mediaprovider.net",
+      author = "direct Netware Group et al.",
       author_email = "web@direct-netware.de",
       license = "GPLv2+",
       url = "https://www.mediaprovider.net",
+
+      platforms = [ "any" ],
 
       packages = [ "dNG" ],
 
